@@ -13,7 +13,8 @@
     "stage6": "forever -c \"nodemon --exitcrash -L\" ./stages/app-final.js",
     "challenge1": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-1-switch.js",
     "challenge2": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-2-file-sys.js",
-    "challenge3": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-3-node-fetch.js"
+    "challenge3": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-3-node-fetch.js",
+    "queryStringExample": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/query-string-example.js"
   },
   "keywords": [],
   "author": "",

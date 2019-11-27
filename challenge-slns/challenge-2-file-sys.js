@@ -102,13 +102,15 @@ function randomPair() {
 }
 
 function createStringFromArray(array) {
-    let result = ''
-    array.forEach((value) => {
-        if(value !== ''){
-            result = result + `${value}\n`
-        }
-    })
-    return result
+    // You could do this the "long way":
+    // let result = ''
+    // array.forEach((value) => {
+    //     if(value !== ''){
+    //         result = result + `${value}\n`
+    //     }
+    // })
+    // OR use join:
+    return array.join('\n')
 }
 
 function writeToFileSystem(path, data) {
