@@ -203,7 +203,7 @@ Ok now we know the route and the HTTP verb lets modify our code to look for thes
 
 Since we have a bit of code to write, we'll create a named callback function and pass that to createServer. Let's start with implementing GET on the root route ('/'). We'll just put a simple response for now:
 
-### Stage 3A - Server with a Route
+### Stage 3A - The / Route
 
 app.js
 
@@ -233,7 +233,7 @@ If we go to localhost:3000 we can see that we are sending back a simple string, 
 
 Now that we are only responding when we match GET on '/', we will see the client appear to hang if we try to visit any other url. We need to implement our other routes.
 
-#### The /students route (GET)
+### Stage 3B - The /students route (GET)
 
 First lets start with showing all of our students. To mock this data we will just create an array to hold the names.
 
