@@ -22,7 +22,7 @@ function serverResponse(req, res) {
     // Get request on '/'
     console.log('Getting a random pair of students');
     res.setHeader('Content-type', 'text/plain');
-    res.end(randomPair());
+    res.end('Matching students');
   } else if (method === 'GET' && url === '/students') {
     // Get request on '/students'
     console.log("Getting a list of students");
@@ -73,11 +73,3 @@ const server = http.createServer(serverResponse);
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-
-// A function to return two random students as a string
-// It is possible we'll get the same student twice
-function randomPair() {
-    let s1Ind = Math.floor(Math.random() * students.length);
-    let s2Ind = Math.floor(Math.random() * students.length);
-    return `${students[s1Ind]} ${students[s2Ind]}`;
-  }

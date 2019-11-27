@@ -5,7 +5,15 @@
   "main": "app-stage-one.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node-server": "forever -c \"nodemon --exitcrash -L\" app-stage-three-b.js"
+    "stage1": "forever -c \"nodemon --exitcrash -L\" ./stages/s3.js",
+    "stage2": "forever -c \"nodemon --exitcrash -L\" ./stages/s3.js",
+    "stage3a": "forever -c \"nodemon --exitcrash -L\" ./stages/s3.js",
+    "stage3b": "forever -c \"nodemon --exitcrash -L\" ./stages/s3.js",
+    "stage4": "forever -c \"nodemon --exitcrash -L\" ./stages/s3.js",
+    "stage6": "forever -c \"nodemon --exitcrash -L\" ./stages/app-final.js",
+    "challenge1": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-1-switch.js",
+    "challenge2": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-2-file-sys.js",
+    "challenge3": "forever -c \"nodemon --exitcrash -L\" ./challenge-slns/challenge-3-node-fetch.js"
   },
   "keywords": [],
   "author": "",

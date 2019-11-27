@@ -16,8 +16,6 @@ function serverResponse(req, res) {
         headers
     } = req;
 
-
-
     if (method === 'GET' && url === '/') {
 
         console.log('Getting a random pair of students');
@@ -56,17 +54,17 @@ function serverResponse(req, res) {
     } else if (method === 'GET' && url === '/users') {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
-            .then(json => {
-                res.end(JSON.stringify(json))
+            .then(json => { 
+                res.end(JSON.stringify(json)) // don't forget to stringify when returning to the client!
             });
     } else if (method === 'GET' && url === '/posts') {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(res => res.json())
             .then(json => {
-                const posts = json.map((post) => {
+                const posts = json.map((post) => { // create an array of post titles with map!
                     return post.title
                 })
-                res.end(JSON.stringify(posts))
+                res.end(JSON.stringify(posts)) // don't forget to stringify when returning to the client!
             });
     }
     else {
