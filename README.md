@@ -550,6 +550,8 @@ Using a third-party API such as the Pokedex or JSONPlaceholder, create a http se
 
 - return a summary of data using the **reduce** method.
 - return an array of objects that have been mutated in some way using the **map** method
-- accept a POST request containing a value to filter by and return an array of objects using the **filter** method
+- accept a GET request with a query string containing a value to set the filter for the applicaton and return an array of objects using the **filter** method
+  - the GET request URL would look like this: http://localhost:3000/?filter=valueToFilterBy
+  - Hint: check the Node.js documentation for the **url** module: https://nodejs.org/docs/latest-v12.x/api/url.html#url_url_parse_urlstring_parsequerystring_slashesdenotehost
 
-NOTE: all data returned should be **application/json**.
+NOTE: all data returned should be **application/json**, remeber to **JSON.stringify()
