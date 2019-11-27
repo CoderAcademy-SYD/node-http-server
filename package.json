@@ -1,0 +1,20 @@
+{
+  "name": "node-http",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-stage-one.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-server": "forever -c \"nodemon --exitcrash -L\" app-stage-three-b.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "forever": "^1.0.0",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
